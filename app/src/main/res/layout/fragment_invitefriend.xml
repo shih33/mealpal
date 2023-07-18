@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InvitefriendFragment">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/invite_fri_top_pic"/>
+<!--  1st friend  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小華 ❤"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/begbtn1"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="invite"
+                android:textSize="20sp"
+                android:background="@drawable/ibtn1"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--  2nd friend  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pomu ❤"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/begbtn2"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="invite"
+                android:textSize="20sp"
+                android:background="@drawable/ibtn1"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--  3rd friend  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jason ❤"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/begbtn3"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="invite"
+                android:textSize="20sp"
+                android:background="@drawable/ibtn1"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--  4th friend  -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gray_pic"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenny ❤"
+                android:textStyle="bold"
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:paddingTop="5dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/begbtn4"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="invite"
+                android:textSize="20sp"
+                android:background="@drawable/ibtn1"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/invitefriendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/inv_next_pic"
+            android:background="#FFF"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

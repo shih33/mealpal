@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:text="Sign Up"
+        android:textColor="#7E2E01"
+        android:textStyle="bold"
+        android:paddingVertical="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="帳號"
+        android:textColor="@color/black"
+        android:paddingVertical="5dp"/>
+
+    <EditText
+        android:id="@+id/account_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/setting_input_1"
+        android:textSize="30sp"
+        android:paddingLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="密碼"
+        android:textColor="@color/black"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/setting_input_1"
+        android:textSize="30sp"
+        android:paddingLeft="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="暱稱"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/setting_input_1"
+        android:textSize="30sp"
+        android:paddingLeft="15dp"/>
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:textSize="30sp"
+        android:text="註冊"
+        android:background="@drawable/custom_btn1"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+
+</LinearLayout>

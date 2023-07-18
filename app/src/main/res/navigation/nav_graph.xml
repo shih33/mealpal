@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.meal_kotlin.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.meal_kotlin.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_findrtFragment"
+            app:destination="@id/findrtFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_whoFragment"
+            app:destination="@id/whoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.meal_kotlin.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_voteFragment"
+            app:destination="@id/voteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voteFragment"
+        android:name="com.example.meal_kotlin.VoteFragment"
+        android:label="fragment_vote"
+        tools:layout="@layout/fragment_vote" >
+        <action
+            android:id="@+id/action_voteFragment_to_vresultFragment"
+            app:destination="@id/vresultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vresultFragment"
+        android:name="com.example.meal_kotlin.VresultFragment"
+        android:label="fragment_vresult"
+        tools:layout="@layout/fragment_vresult" >
+        <action
+            android:id="@+id/action_vresultFragment_to_manageFragment"
+            app:destination="@id/manageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invitedFragment"
+        android:name="com.example.meal_kotlin.InvitedFragment"
+        android:label="fragment_invited"
+        tools:layout="@layout/fragment_invited" />
+    <fragment
+        android:id="@+id/manageFragment"
+        android:name="com.example.meal_kotlin.ManageFragment"
+        android:label="fragment_manage"
+        tools:layout="@layout/fragment_manage" >
+        <action
+            android:id="@+id/action_manageFragment_to_invitationFragment"
+            app:destination="@id/invitationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invitationFragment"
+        android:name="com.example.meal_kotlin.InvitationFragment"
+        android:label="fragment_invitation"
+        tools:layout="@layout/fragment_invitation" >
+        <action
+            android:id="@+id/action_invitationFragment_to_manageFragment"
+            app:destination="@id/manageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/findrtFragment"
+        android:name="com.example.meal_kotlin.FindrtFragment"
+        android:label="fragment_findrt"
+        tools:layout="@layout/fragment_findrt" >
+        <action
+            android:id="@+id/action_findrtFragment_to_gachaFragment"
+            app:destination="@id/gachaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gachaFragment"
+        android:name="com.example.meal_kotlin.GachaFragment"
+        android:label="fragment_gacha"
+        tools:layout="@layout/fragment_gacha" >
+        <action
+            android:id="@+id/action_gachaFragment_to_getrtFragment"
+            app:destination="@id/getrtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getrtFragment"
+        android:name="com.example.meal_kotlin.GetrtFragment"
+        android:label="fragment_getrt"
+        tools:layout="@layout/fragment_getrt" >
+        <action
+            android:id="@+id/action_getrtFragment_to_listrtFragment"
+            app:destination="@id/listrtFragment" />
+        <action
+            android:id="@+id/action_getrtFragment_to_gachaFragment"
+            app:destination="@id/gachaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listrtFragment"
+        android:name="com.example.meal_kotlin.ListrtFragment"
+        android:label="fragment_listrt"
+        tools:layout="@layout/fragment_listrt" />
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.meal_kotlin.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend" >
+        <action
+            android:id="@+id/action_friendFragment_to_buddyFragment"
+            app:destination="@id/buddyFragment" />
+        <action
+            android:id="@+id/action_friendFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buddyFragment"
+        android:name="com.example.meal_kotlin.BuddyFragment"
+        android:label="fragment_buddy"
+        tools:layout="@layout/fragment_buddy" >
+        <action
+            android:id="@+id/action_buddyFragment_to_friendFragment"
+            app:destination="@id/friendFragment" />
+        <action
+            android:id="@+id/action_buddyFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whoFragment"
+        android:name="com.example.meal_kotlin.WhoFragment"
+        android:label="fragment_who"
+        tools:layout="@layout/fragment_who" >
+        <action
+            android:id="@+id/action_whoFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_whoFragment_to_findfriendsetFragment"
+            app:destination="@id/findfriendsetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.meal_kotlin.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/findfriendsetFragment"
+        android:name="com.example.meal_kotlin.FindfriendsetFragment"
+        android:label="fragment_findfriendset"
+        tools:layout="@layout/fragment_findfriendset" >
+        <action
+            android:id="@+id/action_findfriendsetFragment_to_invitefriendFragment"
+            app:destination="@id/invitefriendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invitefriendFragment"
+        android:name="com.example.meal_kotlin.InvitefriendFragment"
+        android:label="fragment_invitefriend"
+        tools:layout="@layout/fragment_invitefriend" >
+        <action
+            android:id="@+id/action_invitefriendFragment_to_manageFragment"
+            app:destination="@id/manageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/invitefinishFragment"
+        android:name="com.example.meal_kotlin.InvitefinishFragment"
+        android:label="fragment_invitefinish"
+        tools:layout="@layout/fragment_invitefinish" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.meal_kotlin.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/t1Fragment"
+        android:name="com.example.meal_kotlin.T1Fragment"
+        android:label="fragment_t1"
+        tools:layout="@layout/fragment_t1" />
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.meal_kotlin.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.meal_kotlin.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.meal_kotlin.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+</navigation>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindrtFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/find_res_pic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人數"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="number" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="想吃"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="15dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="34sp"
+            android:background="@drawable/green_frame"/>
+    </LinearLayout>
+    <!--第一排-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+日式"
+            android:textSize="24sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+韓式"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+美式"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <!--第二排-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+披薩"
+            android:textSize="24sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+輕食"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food6"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+家聚"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <!--第三排-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food7"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+早餐"
+            android:textSize="24sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/food8"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/food_cus1"
+            android:text="+網美咖啡店"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <!--第四排-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/food9"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/food_cus1"
+        android:text="+已收藏餐廳"
+        android:textSize="24sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/rtdonebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/done_btn_green"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+
+<!--
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/options_pic"
+            android:paddingTop="10dp"/>
+-->
